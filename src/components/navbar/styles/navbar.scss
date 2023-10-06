@@ -1,0 +1,22 @@
+.navbar{
+    
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding-left: 100px;
+    padding-right: 100px;   
+    
+    .navbar-left-child{
+        color: #4096FF;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .navbar-right-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+}

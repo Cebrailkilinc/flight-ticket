@@ -1,0 +1,62 @@
+$navbartext-hover-color: #4096FF;
+
+.home-flight-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+
+    .flight-form-city {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .change-icon {
+            margin-top: 15px;
+            cursor: pointer;
+            color: $navbartext-hover-color;
+
+            &:hover {
+                color: black;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+    .flight-form-date {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .flight-form-area {
+        display: flex;
+        align-items: start;
+        gap: 40px;
+        margin-top: 20px;
+
+        .flight-form-area-button {
+            margin-top: 25px;
+        }
+    }
+    
+    .flight-form-send-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .flight-form-alert{
+        margin-top: 20px;
+    }
+}
+
+
+.ant-picker .ant-picker-input>input {
+    min-width: 155px !important;
+}
+

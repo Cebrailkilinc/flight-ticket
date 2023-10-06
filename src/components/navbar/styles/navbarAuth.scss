@@ -1,0 +1,25 @@
+$navbartext-color: #868686;
+$navbartext-hover-color: #4096FF;
+.navbar-login-component {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $navbartext-color;
+  cursor: pointer;
+  &:hover {
+    color: $navbartext-hover-color;  
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.navbar-register-component{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $navbartext-color;
+  cursor: pointer;
+  &:hover {
+    color: $navbartext-hover-color;  
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

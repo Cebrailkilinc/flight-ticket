@@ -1,0 +1,347 @@
+$primaryBlueColor: #969696;
+
+.flight-detail-container {
+  max-width: 1365px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  .flight-detail-top-menu {
+    border: solid 1px #c9c9c9;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8faf9;
+    color: #53605e;
+    font-size: 15px;
+
+    .flight-detail-top-menu-items {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  .flight-detail-layout {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+
+    .flight-detail-side-menu {
+      margin-top: 20px;
+    }
+  }
+
+  .flight-detail-right-area {
+    width: 100%;
+
+    .flight-list-date {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: solid 1px $primaryBlueColor;
+      padding: 4px 20px;
+      border-radius: 5px;
+      background-color: $primaryBlueColor;
+
+      h1 {
+        color: white;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+    }
+
+    .flight-detail-filter {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      #filter-dropdown-menu-button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+
+    }
+
+    #segment-airports-food {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.side-menu {
+  border: 1px solid #c4c4c4;
+  max-width: 256px;
+}
+
+.flight-detail-card {
+  margin-top: 30px;
+  border: 1px solid $primaryBlueColor;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 15px;
+  color: #53605e;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #F8FAF9;
+    transition: 0.5s;
+  }
+
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #4096FF;
+    cursor: pointer;
+    transition: opacity 1s ease-out;
+    width: 50px;
+
+    &:hover {
+      color: #2a5b97;
+      transition: 0.5s;
+    }
+  }
+
+  .card-main {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+  }
+
+  .card-main-flight-detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+
+    .flight-name {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  .card-main-bag-detail {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+
+    .bag-size {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+    }
+
+    .bag-detail-aktarma {
+      color: red;
+      font-size: 12px;
+    }
+
+    .bag-detail-ticket {
+      font-size: 12px;
+    }
+  }
+
+  .card-main-time {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+
+    .time-clock {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      .time-clock-departure {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    .time-sequence {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+    }
+
+    .time-sequence>h6 {
+      margin-top: 2px;
+    }
+  }
+
+  .card-main-price {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+
+    .price-area {
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .price-area>h6 {
+      font-size: 12px;
+    }
+
+    .seat-warning {
+      color: red;
+      font-size: 12px;
+    }
+  }
+
+  .card-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    margin-top: 40px;
+
+
+    .segment-airports {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .segment-airports-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo-yuvarlak {
+          border: 1px solid #4096FF;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+        }
+
+        .logo-cizgi {
+          border-right: 1px solid #4096FF;
+          height: 10px;
+        }
+
+        .logo-dolu {
+          border: 1px solid #4096FF;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+          background-color: #4096FF;
+        }
+      }
+
+    }
+
+    #segment-airports-food {
+      display: flex;
+      gap: 5px;
+      margin-left: 10px;
+    }
+  }
+
+  .type-of-flight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .eco-flight {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+      color: rgb(153, 153, 153);
+      border: 1px solid;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      padding-right: 100px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+      height: 200px;
+
+    
+
+      .radio {
+        color: #53605E;
+        font-weight: 900;
+        font-size: 18px;
+      }
+
+      .price-area {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #53605E;
+      }
+
+      .price-area>h6 {
+        font-size: 18px;
+      }
+      .eco-flight-conditions{
+        padding-bottom: 5px;
+      }
+      .eco-flight-conditions>li {
+        display: flex;
+        align-items: center;
+        gap: 5px;        
+      }
+    }
+    @media screen and (max-width: 1200px) {          
+      .eco-flight{
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       padding: 10px;
+       width: 90%;       
+      }
+     
+    }
+  }
+  @media screen and (max-width: 1200px) {          
+   .type-of-flight{
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .flight-detail-left-area{
+    display: none;
+  }
+  
+}
+
